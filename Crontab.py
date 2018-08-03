@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @file: Crontab.py
 @time: 2018/6/29 9:04
 @desc:
