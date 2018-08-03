@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @time: 2018/7/11 10:15
 '''
 
@@ -86,19 +85,9 @@ class GUI_XPath():
             except:
                 self.result_text.delete(1.0, END)
                 self.result_text.insert(1.0, "ERROR:解析xml数据失败")
-'''
-    def output(self):
-        """将结果输出"""
-        self.result_text.delete(1.0, END)
-        self.result_text.insert(1.0, '数据输出仍在开发中...ヾ(。￣□￣)ﾂ゜゜゜')
-        # fixme..
-'''
 
 def main():
     gui = Tk()
     gui_XPath = GUI_XPath(gui)
     gui_XPath.set_init_window()
     gui.mainloop()
-
-if __name__ == '__main__':
-    main()
