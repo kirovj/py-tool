@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @file: TransByJere.py
 @time: 2018/6/26 13:43
 @desc:
