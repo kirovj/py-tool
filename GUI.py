@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @file: GUI.py
 @time: 2018/6/27 18:31
 @desc:
@@ -71,11 +70,6 @@ class MY_GUI():
         #                               relief="solid", command=self.loadFile)
         # self.loadFile_button.grid(row=0, column=1, sticky="w")
 
-        # 今儿谁开会
-        self.congratulations_button = Button(self.init_window_name, text="今儿谁开会?", bg="WhiteSmoke", width=10,
-                                             relief="solid", command=self.congratulations)
-        self.congratulations_button.grid(row=0, column=20)
-
         # readUpdateLog
         self.readUpdateLog_button = Button(self.init_window_name, text="更新日志", bg="WhiteSmoke", width=10,
                                            relief="solid", command=self.readUpdateLog)
@@ -125,27 +119,11 @@ class MY_GUI():
         self.JSONPath_button = Button(self.init_window_name, text="JSONPath", bg="#adff2f", width=10, command=self.JSONPathGUI)
         self.JSONPath_button.grid(row=11, column=11)
 
-    # def loadFile(self):
-    #     path = askopenfilename()
-    #     self.file_label = Label(self.init_window_name, text="file: %s" % path)
-    #     self.file_label.grid(row=0, column=2, columnspan=10, sticky='w')
-    #     if self.file_label:
-    #         try:
-    #             with open(path, 'rb') as f:
-    #                 while True:
-    #                     data = f.read(1024)
-    #                     if not data:
-    #                         break
-    #                     self.init_data_Text.insert(1.0, data.decode('utf-8'))
-    #         except:
-    #             self.writeLog("ERROR:读取文件失败！")
-    #             return None
-
     def JSONPathGUI(self):
         try:
             GUI_JSONPath.main()
         except:
-            self.writeLog("ERROR:JSONPathGUI测试界面启动失败")
+            self.writeLog("ERROR:JSONPath测试界面启动失败")
 
     def XPathGUI(self):
         try:
@@ -323,14 +301,9 @@ class MY_GUI():
 
 
 def main():
-    init_window = Tk()              # 实例化父窗口
+    init_window = Tk()            
     ZMJ_PORTAL = MY_GUI(init_window)
     # 设置根窗口默认属性
     ZMJ_PORTAL.set_init_window()
 
-    init_window.mainloop()          # 父窗口进入事件循环，可以理解为保持窗口运行，否则界面不展示
-
-
-
-if __name__ == '__main__':
-    main()
+    init_window.mainloop()         
