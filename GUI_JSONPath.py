@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @time: 2018/7/11 10:15
 '''
 
@@ -115,19 +114,8 @@ def foreach(array):
         i += 1
     return result_str
 
-'''
-def output(self):
-    """将结果输出"""
-    self.result_text.delete(1.0, END)
-    self.result_text.insert(1.0, '数据输出仍在开发中...ヾ(。￣□￣)ﾂ゜゜゜')
-    # fixme..
-'''
-
 def main():
     gui = Tk()
     gui_JSONPath = GUI_JSONPath(gui)
     gui_JSONPath.set_init_window()
     gui.mainloop()
-
-if __name__ == '__main__':
-    main()
