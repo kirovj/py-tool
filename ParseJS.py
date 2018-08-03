@@ -1,7 +1,6 @@
 # encoding: utf-8
 '''
 @author: Jeremiah
-@contact: wuyiting@myhexin.com
 @file: ParseJS.py
 @time: 2018/6/27 15:16
 @desc:
